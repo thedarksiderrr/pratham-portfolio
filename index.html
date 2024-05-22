@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
+    />
+    <title>Pratham's Portfolio</title>
+    <!-- Primary Meta Tags -->
+    <meta
+      name="description"
+      content="Welcome to Pratham Chapla's portfolio. Explore his experience, projects, and contact information."
+    />
+    <meta
+      name="keywords"
+      content="Pratham Chapla, software developer, portfolio, projects, experience, contact"
+    />
+    <meta name="author" content="Pratham Chapla" />
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.prathamchapla.com/" />
+    <meta property="og:title" content="Pratham's Portfolio" />
+    <meta
+      property="og:description"
+      content="Welcome to Pratham Chapla's portfolio. Explore his experience, projects, and contact information."
+    />
+    <meta property="og:image" content="./images/profile-pic.png" />
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://www.prathamchapla.com/" />
+    <meta property="twitter:title" content="Pratham's Portfolio" />
+    <meta
+      property="twitter:description"
+      content="Welcome to Pratham Chapla's portfolio. Explore his experience, projects, and contact information."
+    />
+    <meta property="twitter:image" content="./images/profile-pic.png" />
+    <!-- Additional Meta Tags for SEO -->
+    <meta name="robots" content="index,follow" />
+    <meta name="distribution" content="global" />
+    <meta name="revisit-after" content="7 days" />
+    <meta name="rating" content="general" />
+    <meta name="referrer" content="always" />
+    <meta name="theme-color" content="#ffffff" />
+    <!-- Canonical Link -->
+    <link rel="canonical" href="https://www.prathamchapla.com/" />
+    <!--  -->
+    <link rel="shortcut icon" type="image/x-icon" href="./images/favicon.ico">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+
+  <body>
+    <!-- <div class="scroll-up-btn">
+      <img
+        src="./images/arrow.png"
+        alt="Arrow Icon"
+        class="icon arrow"
+        onclick="location.href='./#profile'"
+      />
+    </div> -->
+    <!-- desktop view nav -->
+    <nav id="desktop-nav">
+      <div class="logo">Pratham Chapla</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- mobile view nav -->
+    <nav id="mobile-nav">
+      <div class="logo">Pratham Chapla</div>
+      <div class="mobile-menu">
+        <div class="mobile-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+
+    <!-- profile section -->
+    <section id="profile">
+      <div class="profile-pic">
+        <img
+          src="./images/profile-pic.png"
+          alt="Pratham Chapla Profile Picture"
+        />
+      </div>
+      <div class="section-content">
+        <p class="profile-content-p1">Hello, I'm</p>
+        <h1 class="title">Pratham Chapla <span> (PC)</span></h1>
+        <p class="profile-content-p2">Software Developer</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./images/pratham-resume.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <!-- linkedin -->
+          <a href="https:/www.linkedin.com/in/pratham-chapla" target="_blank"
+            ><img
+              src="./images/linkedin.png"
+              alt="My Linkedin Profile"
+              class="icon"
+          /></a>
+          <!-- github -->
+          <a href="https://github.com/thedarksiderrr" target="_blank"
+            ><img
+              src="./images/github.png"
+              alt="My Linkedin Profile"
+              class="icon"
+          /></a>
+        </div>
+      </div>
+    </section>
+    <!-- profile section -->
+
+    <!-- about section -->
+    <section id="about">
+      <p class="about-content-p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="about-pic">
+          <img
+            src="./images/about-pic.png"
+            alt="About me picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-detail-container">
+          <div class="about-container">
+            <div class="details-container">
+              <img
+                src="./images/experience.png"
+                alt="Experience Icon"
+                class="icon"
+              />
+              <h3>Experience</h3>
+              <p>1.5+ years <br />Jr. Software Developer</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./images/education.png"
+                alt="Education Icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>B.E. I.T.<br />Diploma I.T.</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              I have a solid background in software development, with experience
+              in various projects. I've worked with <b>XMaintain</b>, an ERP
+              system, using <b>SmartGWT Frameworks</b>. One of my main tasks was
+              enhancing the <b>File Manager</b> feature, similar to Google
+              Drive. I'm also skilled in Jasper Reports, where I design reports
+              and customize templates to fit system needs. Moreover, I've
+              created REST APIs using Spring Boot, customize them to specific
+              project requirements. My work involves designing, implementing,
+              and testing these APIs for seamless integration.
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./images/arrow.png"
+        alt="Arrow Icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+    <!-- about section -->
+
+    <!-- experience section -->
+    <section id="experience">
+      <p class="experience-content-p1">Explore My</p>
+      <h1 class="title">Experience</h1>
+      <div class="experience-details-container">
+        <div class="about-container">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Frontend Development</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./images/checkmark.png"
+                  alt="Experience Icon"
+                  class="icon"
+                />
+                <div>
+                  <h4>HTML</h4>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./images/checkmark.png"
+                  alt="Experience Icon"
+                  class="icon"
+                />
+                <div>
+                  <h4>CSS</h4>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./images/checkmark.png"
+                  alt="Experience Icon"
+                  class="icon"
+                />
+                <div>
+                  <h4>Bootstrap CSS</h4>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./images/checkmark.png"
+                  alt="Experience Icon"
+                  class="icon"
+                />
+                <div>
+                  <h4>Tailwind CSS</h4>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./images/checkmark.png"
+                  alt="Experience Icon"
+                  class="icon"
+                />
+                <div>
+                  <h4>JavaScript</h4>
+                  <p>Basic</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Backend Development</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./images/checkmark.png"
+                  alt="Experience Icon"
+                  class="icon"
+                />
+                <div>
+                  <h4>Java</h4>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./images/checkmark.png"
+                  alt="Experience Icon"
+                  class="icon"
+                />
+                <div>
+                  <h4>SmartGWT</h4>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./images/checkmark.png"
+                  alt="Experience Icon"
+                  class="icon"
+                />
+                <div>
+                  <h4>MySQL</h4>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./images/checkmark.png"
+                  alt="Experience Icon"
+                  class="icon"
+                />
+                <div>
+                  <h4>Hibernate</h4>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./images/checkmark.png"
+                  alt="Experience Icon"
+                  class="icon"
+                />
+                <div>
+                  <h4>Spring Core</h4>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./images/checkmark.png"
+                  alt="Experience Icon"
+                  class="icon"
+                />
+                <div>
+                  <h4>Spring MVC</h4>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./images/checkmark.png"
+                  alt="Experience Icon"
+                  class="icon"
+                />
+                <div>
+                  <h4>Spring Boot</h4>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./images/checkmark.png"
+                  alt="Experience Icon"
+                  class="icon"
+                />
+                <div>
+                  <h4>Git</h4>
+                  <p>Basic</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <img
+        src="./images/arrow.png"
+        alt="Arrow Icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+    </section>
+    <!-- experience section -->
+
+    <!-- project section -->
+    <section id="projects">
+      <p class="project-content-p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="project-container">
+          <!-- project 1 -->
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./images/project-5.jpg"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">
+              Notes <br />Taker
+            </h2>
+            <div class="btn-container">
+              <a
+                href="https://github.com/thedarksiderrr/noteTaker"
+                target="_blank"
+                ><button class="btn btn-color-2 project-btn">Github</button></a
+              >
+              <!-- <a href="https://github.com/thedarksiderrr" target="_blank"
+                ><button class="btn btn-color-2 project-btn">
+                  Live Demo
+                </button></a
+              > -->
+            </div>
+          </div>
+          <!-- project 2 -->
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./images/project-4.jpg"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Contact Manager</h2>
+            <div class="btn-container">
+              <a
+                href="https://github.com/thedarksiderrr/smart-contact-manager"
+                target="_blank"
+                ><button class="btn btn-color-2 project-btn">Github</button></a
+              >
+              <!-- <a href="https://github.com/thedarksiderrr" target="_blank"
+                ><button class="btn btn-color-2 project-btn">
+                  Live Demo
+                </button></a
+              > -->
+            </div>
+          </div>
+          <!-- project 3 -->
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./images/project-2.png"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Blog Application</h2>
+            <div class="btn-container">
+              <a
+                href="https://github.com/thedarksiderrr/BlogApplication"
+                target="_blank"
+                ><button class="btn btn-color-2 project-btn">Github</button></a
+              >
+              <!-- <a href="https://github.com/thedarksiderrr" target="_blank"
+                ><button class="btn btn-color-2 project-btn">
+                  Live Demo
+                </button></a
+              > -->
+            </div>
+          </div>
+          <!-- project 4 -->
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./images/project-1.png"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">
+              Student Management
+            </h2>
+            <div class="btn-container">
+              <a
+                href="https://github.com/thedarksiderrr/student-management"
+                target="_blank"
+                ><button class="btn btn-color-2 project-btn">Github</button></a
+              >
+              <!-- <a href="https://github.com/thedarksiderrr" target="_blank"
+                ><button class="btn btn-color-2 project-btn">
+                  Live Demo
+                </button></a
+              > -->
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./images/arrow.png"
+        alt="Arrow Icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+    </section>
+    <!-- project section -->
+
+    <!-- contact section -->
+    <section id="contact">
+      <p class="contact-content-p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="contact-info-upper-container">
+        <!-- gmail -->
+        <div class="contact-info-container">
+          <img
+            src="./images/email.png"
+            alt="Email Icon"
+            class="icon email-icon"
+          />
+          <p>
+            <a href="mailto:prathamchapla789@gmail.com">Email</a>
+          </p>
+        </div>
+
+        <!-- linkedin -->
+        <div class="contact-info-container">
+          <img
+            src="./images/linkedin.png"
+            alt="Linkedin Icon"
+            class="icon linkedin-icon"
+          />
+          <p>
+            <a href="https:/www.linkedin.com/in/pratham-chapla" target="_blank"
+              >LinkedIn</a
+            >
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- contact section -->
+
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>
+        Copyrights &#169; 2024 All Rights Reserved by <b>Pratham Chapla</b>.
+      </p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
